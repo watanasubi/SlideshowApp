@@ -39,7 +39,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="56" translatesAutoresizingMaskIntoConstraints="NO" id="N1g-8b-Hj9">
-                                <rect key="frame" x="84" y="260" width="260" height="30"/>
+                                <rect key="frame" x="111.66666666666669" y="260" width="205" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mof-Tc-s3p">
                                         <rect key="frame" x="0.0" y="0.0" width="31" height="30"/>
@@ -52,7 +52,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Lr-dj-Oqf">
-                                        <rect key="frame" x="87" y="0.0" width="31" height="30"/>
+                                        <rect key="frame" x="86.999999999999986" y="0.0" width="31" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="31" id="4yV-6e-iVi"/>
                                         </constraints>
@@ -62,12 +62,12 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vgg-8T-yku">
-                                        <rect key="frame" x="174" y="0.0" width="86" height="30"/>
+                                        <rect key="frame" x="174" y="0.0" width="31" height="30"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="76" id="L1E-JW-4Y2"/>
+                                            <constraint firstAttribute="width" constant="31" id="J9C-Xi-lZw"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <state key="normal" title="再生/停止"/>
+                                        <state key="normal" title="再生"/>
                                         <connections>
                                             <action selector="buttonPlayPause:" destination="BYZ-38-t0r" eventType="touchUpInside" id="chn-tB-Dm5"/>
                                         </connections>
@@ -75,7 +75,6 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="QAy-dc-2iP"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="260" id="bjE-QT-Kgp"/>
                                 </constraints>
                             </stackView>
                         </subviews>

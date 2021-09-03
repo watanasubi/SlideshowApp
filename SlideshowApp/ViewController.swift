@@ -3,10 +3,9 @@ import UIKit
 class ViewController: UIViewController {
 
     let image = ["画像０","画像１","画像２","画像３","画像４","画像５","画像６","画像７"]
-
+    
     //タイマー
     var timer:Timer?
-    
 
     //タイマー用のカウンターのための変数
     var counter:Int = 0
@@ -14,8 +13,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        imageView.image = UIImage(named:image[0])
+        //追記　立ち上げた時に画像０を表示する
     }
-    
     //selectorで指定された関数
     //次へを押した時の同じメソッドを代入しました
     
@@ -23,7 +23,6 @@ class ViewController: UIViewController {
                         
         //カウンターに1足して次の画像を表示させる
             counter = counter + 1
-
         //現在用意している画像は8枚なので、カウンターが8より大きくなったら0になる
             if ( counter > 7 ) {
                 counter = 0
@@ -115,6 +114,16 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     
     //遷移先のCloseUpView Controllerで宣言しているimageに代入して渡す
     closeUpViewController.image = imageView.image
+    
+    //遷移先に行く前に、停止ボタンを押した時の挙動
+    buttonBack.isEnabled = true    //戻るボタンタップ可
+    buttonBack.setTitleColor(UIColor.blue, for: .normal)
+    buttonNext.isEnabled = true    //次へボタンタップ可
+        buttonNext.setTitleColor(UIColor.blue, for: .normal)
+
+    buttonPlayPause.setTitle("再生", for: UIControl.State.normal)
+        timer?.invalidate()
+        timer = nil
 
    }
 
